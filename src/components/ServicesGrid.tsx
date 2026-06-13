@@ -7,25 +7,25 @@ export default function ServicesGrid() {
       id: "01",
       title: "Design",
       icon: <Palette size={22} className="text-neutral-500 mb-5" />,
-      description: "Crafting intuitive interfaces that delight users."
+      description: "Designing visually stunning, highly responsive, and accessible user interfaces."
     },
     {
       id: "02",
       title: "Development",
       icon: <Code size={22} className="text-neutral-500 mb-5" />,
-      description: "Building robust and scalable web applications."
+      description: "Building secure, scalable backend systems and dynamic modern web applications."
     },
     {
       id: "03",
       title: "Strategy",
       icon: <Layout size={22} className="text-neutral-500 mb-5" />,
-      description: "Planning digital products for maximum impact."
+      description: "Architecting reliable cloud infrastructure, server deployments, and CI/CD pipelines."
     },
     {
       id: "04",
-      title: "Mobile",
+      title: "Mobile Solutions",
       icon: <Smartphone size={22} className="text-neutral-500 mb-5" />,
-      description: "Optimizing experiences for every device."
+      description: "Crafting native-feeling, high-performance cross-platform apps using React Native."
     }
   ];
 

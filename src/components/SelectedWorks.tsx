@@ -80,7 +80,9 @@ const projects = [
       "/assets/projects/p1/img4.png"
     ],
     liveUrl: "https://realestate-2uw3.onrender.com/",
-    codeUrl: "https://github.com/yashwanth17230/RealEstate"
+    codeUrl: "https://github.com/yashwanth17230/RealEstate",
+    liveText: "Explore Platform",
+    codeText: "View Source Code"
   },
   {
     id: "02",
@@ -96,7 +98,9 @@ const projects = [
       "/assets/projects/p2/img4.png"
     ],
     liveUrl: "https://github.com/yashwanth17230/Multimodal_Sentiment_Analysis",
-    codeUrl: "https://github.com/yashwanth17230/Multimodal_Sentiment_Analysis"
+    codeUrl: "https://github.com/yashwanth17230/Multimodal_Sentiment_Analysis",
+    liveText: "Launch Application",
+    codeText: "Check Repository"
   },
   {
     id: "03",
@@ -112,7 +116,9 @@ const projects = [
       "/assets/projects/p3/img4.jpeg"
     ],
     liveUrl: "https://github.com/yashwanth17230/MOVIE_APP",
-    codeUrl: "https://github.com/yashwanth17230/MOVIE_APP"
+    codeUrl: "https://github.com/yashwanth17230/MOVIE_APP",
+    liveText: "Try Mobile App",
+    codeText: "Explore Codebase"
   },
   {
     id: "04",
@@ -126,7 +132,9 @@ const projects = [
       "/assets/projects/p4/img2.jpg"
     ],
     liveUrl: "https://github.com/yashwanth17230/Grocery_Management_System",
-    codeUrl: "https://github.com/yashwanth17230/Grocery_Management_System"
+    codeUrl: "https://github.com/yashwanth17230/Grocery_Management_System",
+    liveText: "Visit Live Site",
+    codeText: "Inspect Code"
   }
 ];
 
@@ -191,7 +199,7 @@ export default function SelectedWorks() {
         </div>
 
         {/* Scrolling Right Column for Details */}
-        <div className="flex flex-col gap-16 pb-[50vh]">
+        <div className="flex flex-col gap-16 pb-24">
           {projects.map((project, index) => (
             <div
               key={project.id}
@@ -236,17 +244,25 @@ export default function SelectedWorks() {
 
                 <div className="flex flex-wrap gap-4 mt-6">
                   <a href={project.liveUrl || "#"} className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-emerald-500 text-black font-medium group w-fit hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-500/20">
-                    <span>Live Demo</span>
+                    <span>{project.liveText || "Live Demo"}</span>
                     <ArrowUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </a>
                   <a href={project.codeUrl || "#"} className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 border border-white/10 text-white font-medium group w-fit hover:bg-white hover:text-black transition-colors">
-                    <span>View Code</span>
+                    <span>{project.codeText || "View Code"}</span>
                     <ArrowUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </a>
                 </div>
               </div>
             </div>
           ))}
+
+          {/* View All Projects Button */}
+          <div className="mt-4 pt-12 border-t border-white/10 flex justify-center lg:justify-start">
+            <a href="https://github.com/yashwanth17230" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white text-black font-bold text-lg group hover:bg-emerald-400 transition-colors shadow-xl">
+              <span>View All Projects on GitHub</span>
+              <ArrowUpRight size={22} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            </a>
+          </div>
         </div>
       </div>
     </section>

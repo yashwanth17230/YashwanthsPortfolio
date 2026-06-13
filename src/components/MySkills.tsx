@@ -15,7 +15,7 @@ const skillCategories = [
   {
     title: "Tools & Platforms",
     icon: <Database size={20} className="text-white" />,
-    skills: ["AWS EC2", "CI/CD", "VPS Deployment", "Git", "GitHub Actions", "Postman", "Insomnia", "Render", "Visual Studio", "Android Studio", "Shopify"]
+    skills: ["AWS EC2", "CI/CD", "VPS Deployment", "Git", "GitHub Actions", "Postman", "Insomnia", "Render", "Visual Studio", "Android Studio", "Wordpress", "Shopify"]
   },
   {
     title: "Soft Skills",
@@ -33,22 +33,22 @@ export default function MySkills() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
         {skillCategories.map((category, idx) => (
-          <div 
-            key={idx} 
+          <div
+            key={idx}
             className="flex flex-col p-8 rounded-2xl bg-[#0a0a0a] border border-white/5 hover:border-white/10 transition-colors h-full min-h-[320px]"
           >
             <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center mb-8 bg-black/50">
               {category.icon}
             </div>
-            
+
             <h3 className="text-xl font-semibold text-white mb-6">
               {category.title}
             </h3>
-            
+
             <div className="flex flex-wrap gap-3">
               {category.skills.map((skill, sIdx) => (
-                <span 
-                  key={sIdx} 
+                <span
+                  key={sIdx}
                   className="px-3 py-1.5 rounded-full bg-black border border-white/10 text-xs text-neutral-400 font-medium hover:text-white hover:border-white/20 transition-colors cursor-default"
                 >
                   {skill}

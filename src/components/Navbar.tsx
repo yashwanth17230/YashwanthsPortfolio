@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { X, Home, User, Briefcase, Phone, FileText } from "lucide-react";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -112,6 +113,19 @@ export default function Navbar() {
           ))}
         </div>
 
+        {/* Social Icons */}
+        <div className="flex items-center justify-center gap-6 pb-8">
+          <a href="https://github.com/yashwanth17230" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/5 border border-white/10 text-neutral-300 hover:text-emerald-400 hover:border-emerald-400 hover:bg-emerald-400/10 transition-all">
+            <FiGithub size={22} />
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/5 border border-white/10 text-neutral-300 hover:text-emerald-400 hover:border-emerald-400 hover:bg-emerald-400/10 transition-all">
+            <FiLinkedin size={22} />
+          </a>
+          <a href="mailto:test@example.com" className="p-3 rounded-full bg-white/5 border border-white/10 text-neutral-300 hover:text-emerald-400 hover:border-emerald-400 hover:bg-emerald-400/10 transition-all">
+            <FiMail size={22} />
+          </a>
+        </div>
+
         {/* Resume button at bottom */}
         <div className="px-6 pb-10">
           <a
@@ -122,7 +136,7 @@ export default function Navbar() {
             className="flex items-center justify-center gap-2 w-full bg-white text-black py-4 rounded-full font-semibold hover:bg-emerald-400 transition-colors text-base"
           >
             <FileText size={18} />
-            Download Resume
+            View Resume
           </a>
         </div>
       </div>

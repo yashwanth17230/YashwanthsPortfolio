@@ -60,3 +60,17 @@ h6 {
 nextjs-portal {
   display: none !important;
 }
+
+/* Global Protections */
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-select: none;
+}
+
+body {
+  -webkit-touch-callout: none;
+  user-select: none;
+}

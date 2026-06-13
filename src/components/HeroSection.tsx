@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
+import { ArrowUpRight } from 'lucide-react';
 
 export default function HeroSection() {
   return (
@@ -7,10 +10,13 @@ export default function HeroSection() {
 
       {/* Left Content (Text) */}
       <div className="relative z-10 w-full lg:w-[60%] flex flex-col items-center lg:items-start text-center lg:text-left order-1 lg:order-1 mt-0 lg:pr-8">
-        {/* Name Label */}
-        <div className="flex items-center justify-center lg:justify-start gap-4 mb-6">
-          <div className="w-12 h-[1px] bg-neutral-700"></div>
-          <span className="text-neutral-400 text-xs md:text-sm tracking-[0.2em] font-medium uppercase">YASHWANTH</span>
+        {/* Status Label */}
+        <div className="flex items-center justify-center lg:justify-start gap-3 mb-6 px-4 py-2 rounded-full border border-white/10 bg-white/5 w-fit mx-auto lg:mx-0">
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span>
+          <span className="text-neutral-300 text-xs md:text-sm tracking-widest font-medium uppercase">Crafting Digital Experiences</span>
         </div>
 
         {/* Big Text */}
@@ -29,43 +35,46 @@ export default function HeroSection() {
 
         {/* CTA Buttons (Desktop Only) */}
         <div className="hidden lg:flex flex-wrap items-center gap-4 mt-10">
-          <a href="#work" className="px-8 py-4 bg-white text-black font-medium rounded-full hover:bg-neutral-200 transition-colors">
-            View Selected Work
+          <a href="#work" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-black font-bold rounded-full group hover:bg-emerald-400 transition-colors">
+            <span>Explore Portfolio</span>
+            <ArrowUpRight size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
           </a>
           <a href="/profile" className="px-8 py-4 bg-transparent border border-neutral-700 text-white font-medium rounded-full hover:bg-white/5 transition-colors">
-            My Profile
+            Read My Story
           </a>
         </div>
       </div>
 
       {/* Right Image */}
       <div className="relative w-full lg:w-[40%] flex justify-center lg:justify-end order-2 lg:order-2 mt-12 lg:mt-0">
-        {/* Smoky portrait blending into background */}
+        {/* Soft radial mask to remove all sharp edges */}
         <div
-          className="relative w-[300px] h-[400px] md:w-[400px] md:h-[500px] lg:w-[450px] lg:h-[550px] overflow-hidden"
+          className="relative w-[300px] h-[400px] md:w-[400px] md:h-[500px] lg:w-[450px] lg:h-[550px] overflow-hidden select-none"
           style={{
-            WebkitMaskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)',
-            maskImage: 'linear-gradient(to bottom, black 50%, transparent 100%)'
+            WebkitMaskImage: 'linear-gradient(to right, transparent, black 20%, black 80%, transparent), linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)',
+            WebkitMaskComposite: 'source-in',
+            maskImage: 'linear-gradient(to right, transparent, black 20%, black 80%, transparent), linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)',
+            maskComposite: 'intersect'
           }}
         >
           <Image
             src="/assets/imgc3.jpeg"
             alt="YASHWANTH"
             fill
+            draggable={false}
             className="object-cover object-top hover:scale-105 transition-transform duration-700"
           />
-          {/* Left side fade to blend with text side */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent w-[40%] pointer-events-none" />
         </div>
       </div>
 
       {/* CTA Buttons (Mobile Only) */}
       <div className="flex lg:hidden flex-col sm:flex-row items-center justify-center gap-4 mt-12 order-3 w-full">
-        <a href="#work" className="px-8 py-4 w-full sm:w-auto text-center bg-white text-black font-medium rounded-full hover:bg-neutral-200 transition-colors">
-          View Selected Work
+        <a href="#work" className="inline-flex items-center justify-center gap-2 px-8 py-4 w-full sm:w-auto bg-white text-black font-bold rounded-full group hover:bg-emerald-400 transition-colors">
+          <span>See Latest Projects</span>
+          <ArrowUpRight size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
         </a>
         <a href="/profile" className="px-8 py-4 w-full sm:w-auto text-center bg-transparent border border-neutral-700 text-white font-medium rounded-full hover:bg-white/5 transition-colors">
-          My Profile
+          Discover My Journey
         </a>
       </div>
 

@@ -5,7 +5,7 @@ import {
   SiHtml5, SiCss, SiBootstrap, SiReact,
   SiRedux, SiTailwindcss, SiNodedotjs, SiExpress,
   SiMysql, SiMongodb, SiGit, SiGithub,
-  SiVite, SiNpm, SiPostman, SiVercel, SiFigma
+  SiVite, SiNpm, SiPostman, SiVercel, SiFigma, SiNextdotjs
 } from "react-icons/si";
 import { FaJava, FaAws, FaAndroid } from "react-icons/fa";
 import { Bot, MousePointer2, Rocket, Blocks } from "lucide-react";
@@ -35,6 +35,7 @@ export default function TechStackMarquee() {
     { name: "CSS3", icon: <SiCss size={24} />, color: "#1572B6" },
     { name: "Bootstrap", icon: <SiBootstrap size={24} />, color: "#7952B3" },
     { name: "React", icon: <SiReact size={24} />, color: "#61DAFB" },
+    { name: "Next.js", icon: <SiNextdotjs size={24} />, color: "#ffffff" },
     { name: "React Native", icon: <SiReact size={24} />, color: "#61DAFB" },
     { name: "Redux", icon: <SiRedux size={24} />, color: "#764ABC" },
     { name: "Tailwind", icon: <SiTailwindcss size={24} />, color: "#06B6D4" },
