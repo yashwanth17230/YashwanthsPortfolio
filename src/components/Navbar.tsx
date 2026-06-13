@@ -29,9 +29,9 @@ export default function Navbar() {
             YASHWANTH.
           </Link>
           <div className="flex items-center gap-8 text-sm font-medium text-neutral-400">
-            <Link href="#work" className="hover:text-white transition-colors">WORK</Link>
+            <Link href="/#work" className="hover:text-white transition-colors">WORK</Link>
             <Link href="/profile" className="hover:text-white transition-colors">ABOUT</Link>
-            <Link href="#contact" className="hover:text-white transition-colors">CONTACT</Link>
+            <Link href="/#contact" className="hover:text-white transition-colors">CONTACT</Link>
             <a
               href="/CV_YashwanthR.pdf"
               target="_blank"
@@ -86,9 +86,9 @@ export default function Navbar() {
         <div className="flex flex-col px-6 pt-10 gap-2 flex-1">
           {[
             { label: "Home", href: "/", num: "01" },
-            { label: "Work", href: "#work", num: "02" },
+            { label: "Work", href: "/#work", num: "02" },
             { label: "About", href: "/profile", num: "03" },
-            { label: "Contact", href: "#contact", num: "04" },
+            { label: "Contact", href: "/#contact", num: "04" },
           ].map((item) => (
             <Link
               key={item.href}

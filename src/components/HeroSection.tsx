@@ -49,7 +49,7 @@ export default function HeroSection() {
       <div className="relative w-full lg:w-[40%] flex justify-center lg:justify-end order-2 lg:order-2 mt-12 lg:mt-0">
         {/* Soft radial mask to remove all sharp edges */}
         <div
-          className="relative w-[300px] h-[400px] md:w-[400px] md:h-[500px] lg:w-[450px] lg:h-[550px] overflow-hidden select-none"
+          className="relative w-[260px] h-[300px] sm:w-[300px] sm:h-[380px] md:w-[400px] md:h-[500px] lg:w-[450px] lg:h-[550px] overflow-hidden select-none"
           style={{
             WebkitMaskImage: 'linear-gradient(to right, transparent, black 20%, black 80%, transparent), linear-gradient(to bottom, transparent, black 15%, black 85%, transparent)',
             WebkitMaskComposite: 'source-in',

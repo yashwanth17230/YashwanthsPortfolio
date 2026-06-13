@@ -168,7 +168,7 @@ export default function SelectedWorks() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-32 px-6 md:px-16 lg:px-32 xl:px-48 bg-black text-white relative w-full">
+    <section id="work" ref={sectionRef} className="py-32 px-6 md:px-16 lg:px-32 xl:px-48 bg-black text-white relative w-full">
       <div className="w-full mb-16">
         <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight font-display">
           Selected Works
