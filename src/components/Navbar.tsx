@@ -118,10 +118,10 @@ export default function Navbar() {
           <a href="https://github.com/yashwanth17230" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/5 border border-white/10 text-neutral-300 hover:text-emerald-400 hover:border-emerald-400 hover:bg-emerald-400/10 transition-all">
             <FiGithub size={22} />
           </a>
-          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/5 border border-white/10 text-neutral-300 hover:text-emerald-400 hover:border-emerald-400 hover:bg-emerald-400/10 transition-all">
+          <a href="http://www.linkedin.com/in/yashwanth-r-803858253" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/5 border border-white/10 text-neutral-300 hover:text-emerald-400 hover:border-emerald-400 hover:bg-emerald-400/10 transition-all">
             <FiLinkedin size={22} />
           </a>
-          <a href="mailto:test@example.com" className="p-3 rounded-full bg-white/5 border border-white/10 text-neutral-300 hover:text-emerald-400 hover:border-emerald-400 hover:bg-emerald-400/10 transition-all">
+          <a href="mailto:yashwanthr922@gmail.com" className="p-3 rounded-full bg-white/5 border border-white/10 text-neutral-300 hover:text-emerald-400 hover:border-emerald-400 hover:bg-emerald-400/10 transition-all">
             <FiMail size={22} />
           </a>
         </div>

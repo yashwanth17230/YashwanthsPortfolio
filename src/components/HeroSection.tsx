@@ -29,7 +29,7 @@ export default function HeroSection() {
         {/* Paragraph */}
         <div className="relative z-30 mt-8 max-w-lg mx-auto lg:mx-0">
           <p className="text-base md:text-lg text-neutral-500 font-light leading-relaxed">
-            I help brands and agencies create <span className="text-white font-medium">high-end digital experiences</span> that are performant, accessible, and designed to convert.
+            I architect and build <span className="text-white font-medium">scalable, high-performance applications</span> using modern tech stacks—from seamless mobile experiences to robust backend infrastructure, empowered by the adaptability of AI.
           </p>
         </div>
 
@@ -68,12 +68,12 @@ export default function HeroSection() {
       </div>
 
       {/* CTA Buttons (Mobile Only) */}
-      <div className="flex lg:hidden flex-col sm:flex-row items-center justify-center gap-4 mt-12 order-3 w-full">
-        <a href="#work" className="inline-flex items-center justify-center gap-2 px-8 py-4 w-full sm:w-auto bg-white text-black font-bold rounded-full group hover:bg-emerald-400 transition-colors">
+      <div className="flex lg:hidden flex-col items-center justify-center gap-3 mt-10 order-3 w-full">
+        <a href="#work" className="inline-flex items-center justify-center gap-2 px-6 py-3.5 w-[280px] bg-white text-black font-bold text-sm rounded-full group hover:bg-emerald-400 transition-colors">
           <span>See Latest Projects</span>
-          <ArrowUpRight size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+          <ArrowUpRight size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
         </a>
-        <a href="/profile" className="px-8 py-4 w-full sm:w-auto text-center bg-transparent border border-neutral-700 text-white font-medium rounded-full hover:bg-white/5 transition-colors">
+        <a href="/profile" className="px-6 py-3.5 w-[280px] text-center bg-transparent border border-neutral-700 text-white font-medium text-sm rounded-full hover:bg-white/5 transition-colors">
           Discover My Journey
         </a>
       </div>

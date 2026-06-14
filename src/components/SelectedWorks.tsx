@@ -242,14 +242,14 @@ export default function SelectedWorks() {
                   ))}
                 </div>
 
-                <div className="flex flex-wrap gap-4 mt-6">
-                  <a href={project.liveUrl || "#"} className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-emerald-500 text-black font-medium group w-fit hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-500/20">
+                <div className="flex flex-row gap-2 sm:gap-4 mt-6">
+                  <a href={project.liveUrl || "#"} className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-6 py-2.5 sm:py-3 rounded-full bg-emerald-500 text-black font-medium group hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-500/20 text-xs sm:text-base whitespace-nowrap">
                     <span>{project.liveText || "Live Demo"}</span>
-                    <ArrowUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    <ArrowUpRight size={16} className="shrink-0 sm:w-[18px] sm:h-[18px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </a>
-                  <a href={project.codeUrl || "#"} className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white/5 border border-white/10 text-white font-medium group w-fit hover:bg-white hover:text-black transition-colors">
+                  <a href={project.codeUrl || "#"} className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-6 py-2.5 sm:py-3 rounded-full bg-white/5 border border-white/10 text-white font-medium group hover:bg-white hover:text-black transition-colors text-xs sm:text-base whitespace-nowrap">
                     <span>{project.codeText || "View Code"}</span>
-                    <ArrowUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    <ArrowUpRight size={16} className="shrink-0 sm:w-[18px] sm:h-[18px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </a>
                 </div>
               </div>
@@ -258,9 +258,9 @@ export default function SelectedWorks() {
 
           {/* View All Projects Button */}
           <div className="mt-4 pt-12 border-t border-white/10 flex justify-center lg:justify-start">
-            <a href="https://github.com/yashwanth17230" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white text-black font-bold text-lg group hover:bg-emerald-400 transition-colors shadow-xl">
-              <span>View All Projects on GitHub</span>
-              <ArrowUpRight size={22} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            <a href="https://github.com/yashwanth17230" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 md:gap-3 px-6 md:px-8 py-3 md:py-4 rounded-full bg-white text-black font-bold text-sm sm:text-base md:text-lg group hover:bg-emerald-400 transition-colors shadow-xl w-full sm:w-auto text-center">
+              <span className="whitespace-nowrap">View All Projects on GitHub</span>
+              <ArrowUpRight size={20} className="shrink-0 md:w-[22px] md:h-[22px] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </a>
           </div>
         </div>

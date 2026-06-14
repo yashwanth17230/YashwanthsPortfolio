@@ -44,7 +44,7 @@ export default function Footer() {
       </div>
 
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-2 pt-6 border-t border-white/5 text-xs md:text-sm text-neutral-500">
-        <p>© 2026 Yashwanth R. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Yashwanth R. All rights reserved.</p>
         <p className="md:mt-0">Designed &amp; Built with passion.</p>
       </div>
     </footer>

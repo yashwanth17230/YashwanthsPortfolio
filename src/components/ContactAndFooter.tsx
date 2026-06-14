@@ -113,17 +113,17 @@ export default function ContactAndFooter() {
 
               <div className="flex flex-col gap-2">
                 <label className="text-neutral-500 font-display text-xs tracking-widest uppercase ml-1">What's your name?</label>
-                <input name="name" required suppressHydrationWarning type="text" placeholder="John Doe" className="bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-base text-white focus:outline-none focus:border-emerald-500 focus:bg-white/10 transition-all placeholder:text-neutral-600" />
+                <input name="name" required suppressHydrationWarning type="text" placeholder="John Doe" className="bg-white/5 border border-white/10 rounded-xl px-4 md:px-6 py-3 md:py-4 text-sm md:text-base text-white focus:outline-none focus:border-emerald-500 focus:bg-white/10 transition-all placeholder:text-neutral-600" />
               </div>
               <div className="flex flex-col gap-2">
                 <label className="text-neutral-500 font-display text-xs tracking-widest uppercase ml-1">What's your email?</label>
-                <input name="email" required suppressHydrationWarning type="email" placeholder="john@example.com" className="bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-base text-white focus:outline-none focus:border-emerald-500 focus:bg-white/10 transition-all placeholder:text-neutral-600" />
+                <input name="email" required suppressHydrationWarning type="email" placeholder="john@example.com" className="bg-white/5 border border-white/10 rounded-xl px-4 md:px-6 py-3 md:py-4 text-sm md:text-base text-white focus:outline-none focus:border-emerald-500 focus:bg-white/10 transition-all placeholder:text-neutral-600" />
               </div>
               <div className="flex flex-col gap-2">
                 <label className="text-neutral-500 font-display text-xs tracking-widest uppercase ml-1">Tell me what brings you here</label>
-                <textarea name="message" required suppressHydrationWarning placeholder="Hi Yashwanth, I'd like to talk about..." rows={4} className="bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-base text-white focus:outline-none focus:border-emerald-500 focus:bg-white/10 transition-all placeholder:text-neutral-600 resize-none"></textarea>
+                <textarea name="message" required suppressHydrationWarning placeholder="Hi Yashwanth, I'd like to talk about..." rows={4} className="bg-white/5 border border-white/10 rounded-xl px-4 md:px-6 py-3 md:py-4 text-sm md:text-base text-white focus:outline-none focus:border-emerald-500 focus:bg-white/10 transition-all placeholder:text-neutral-600 resize-none"></textarea>
               </div>
-              <button disabled={isSubmitting} suppressHydrationWarning type="submit" className="mt-4 flex items-center justify-between w-full px-6 py-5 rounded-xl bg-white text-black hover:bg-emerald-400 transition-colors font-display text-lg font-bold group disabled:opacity-50 disabled:cursor-not-allowed">
+              <button disabled={isSubmitting} suppressHydrationWarning type="submit" className="mt-2 md:mt-4 flex items-center justify-between w-full px-5 md:px-6 py-4 md:py-5 rounded-xl bg-white text-black hover:bg-emerald-400 transition-colors font-display text-base md:text-lg font-bold group disabled:opacity-50 disabled:cursor-not-allowed">
                 <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
                 <div className="flex items-center justify-center transition-transform group-hover:translate-x-2">
                   <ArrowRight size={20} />
